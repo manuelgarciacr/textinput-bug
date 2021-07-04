@@ -1,21 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { TextInput, View } from 'react-native';
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    return (
+        <View style={{ flex: 1, flexDirection: "row", marginTop: 25, backgroundColor: "lightblue", marginBottom: 25, alignItems: "center", justifyContent: "center", height: 80 }}>
+            <View style={{ width: 200, backgroundColor: "white" }}>
+                <TextInput autoCompleteType="email"></TextInput>
+            </View>
+        </View>
+    );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
